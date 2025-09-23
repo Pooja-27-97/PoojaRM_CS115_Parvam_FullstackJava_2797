@@ -25,5 +25,8 @@ add column std_class_room varchar(10);
 alter table students
 add column std_class_room varchar(10) default 'cs103';
 
+alter table students
+drop column std_class_room;
+
 -- to get structure of data
 desc students;
