@@ -6,39 +6,43 @@ public class Assignment {
 		
 		Scanner sc = new Scanner(System.in);
 		int studentId;
-		System.out.println("Enter student ID:");
+		System.out.print("Enter student ID: ");
 		studentId = sc.nextInt();
-//		String studentName;
-//		System.out.println("Enter student name:");
-//		studentName = sc.toString();
+		String studentName;
+		System.out.print("Enter student name: ");
+		studentName = sc.next();
 		long marks;
-		System.out.println("Enter student marks:");
+		System.out.print("Enter student marks: ");
 		marks = sc.nextLong();
-		
-		System.out.println("Student details");
-//		System.out.println("Name: " + studentName);
-		System.out.println("ID: " + studentId);
-		System.out.println("Marks: " + marks);
+		System.out.println();
 
 		
 		int empID;
-		System.out.println("Enter employee ID:");
+		System.out.print("Enter employee ID: ");
 		empID = sc.nextInt();
-//		String empName;
-//		System.out.println("Enter employee name:");
-//		empName = sc.nextInt();
+		String empName;
+		System.out.print("Enter employee name: ");
+		empName = sc.next();
 		double empSalary;
-		System.out.println("Enter employee salary:");
+		System.out.print("Enter employee salary: ");
 		empSalary = sc.nextDouble();
-//		String deptName;
-//		System.out.println("Enter department name:");
-//		deptName = sc.nextInt();
+		String deptName;
+		System.out.print("Enter department name: ");
+		deptName = sc.next();
+
+		System.out.println();
+		System.out.println("--------Student details--------");
+		System.out.println("Name: " + studentName);
+		System.out.println("ID: " + studentId);
+		System.out.println("Marks: " + marks);
+		System.out.println("-------------------------------");
 		
-		System.out.println("Employee details");
-//		System.out.println("Name: " + empName);
+		System.out.println("----------Employee details-----------");
+		System.out.println("Name: " + empName);
 		System.out.println("ID: " + empID);
 		System.out.println("Salary: " + empSalary);
-//		System.out.println("Department name: " + deptName);
+		System.out.println("Department name: " + deptName);
+		System.out.println("-------------------------------------");
 		sc.close();
 	}
 
