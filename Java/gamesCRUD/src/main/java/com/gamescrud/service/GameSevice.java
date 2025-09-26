@@ -38,6 +38,10 @@ public class GameSevice {
 		Game save = gameRepository.save(oldGame1);
 		return save;
 	}
+	
+	public Game save(Game member) {
+	    return gameRepository.save(member);
+	}
 	public static void main(String[] args) {
 		
 	}

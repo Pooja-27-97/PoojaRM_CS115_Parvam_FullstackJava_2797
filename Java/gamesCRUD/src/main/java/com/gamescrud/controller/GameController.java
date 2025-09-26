@@ -1,7 +1,6 @@
 package com.gamescrud.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -32,10 +31,10 @@ public class GameController {
 		return game;
 	}
 	
-	@PostMapping({"/games", "/", ""}) 
-		public String postAllGames() {
-			return "Storing games in server";
-	}
+	@PostMapping("/games")
+    public Game postGames(@RequestBody Game game) {
+        return gameService.save(game);
+    }
 	
 	@PutMapping({"/games/id"})
 	public Game updateGames(@RequestBody Game game, @RequestParam Long id) {
