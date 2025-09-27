@@ -1,24 +1,24 @@
 package com.membersCRUD.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import com.membersCRUD.model.Member;
 import com.membersCRUD.service.MemberService;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/games")
+@RequestMapping("/member")
 public class MemberController {
 
     @Autowired
     private MemberService memberService;
 
     @GetMapping({"/member"})
-    public List<Member> getAllMembers() {
-        return memberService.getAllMembers();
-    }
+	public List<Member> getAllMembers() {
+		List<Member> allMembers = memberService.getAllMembers();
+		return allMembers;
+	}
 
     @GetMapping("/{id}")
     public Member getMemberById(@PathVariable Long id) {
