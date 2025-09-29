@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+   <h2>Form Tags</h2>
+   <p>form - main tag</p>
+   <p>label - to label the input block</p>
+   <p>input - to enter the input values</p>
+   <p>textarea - to enter large no of text</p>
+   <p>select - for dropdown</p>
+   <p>option - choice in dropdown</p> 
+
+   <h1>Student registration form</h1>
+    <form action="/submit" method="post">
+        <label for="std_name">Student Name: </label>
+        <input type="text" id="std_name" class="input_field" placeholder="Enter your name"> <br> <br>
+
+        <label for="std_age">Age: </label>
+        <input type="number" id="std_age" class="input_field" placeholder="Enter your age"> <br><br>
+
+        <label for="std_email">Email: </label>
+        <input type="email" id="std_email" class="input_field" placeholder="Enter your email"> <br> <br>
+
+        <label for="std_password">Password: </label>
+        <input type="password" id="std_password" class="input_field" placeholder="Enter your password"> <br> <br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id="female"> <label for="female">Female</label> <br> <br>
+
+        <label>Skills</label>
+        <input type="checkbox" name="skills" id="python"> <label for="python">Python</label>
+        <input type="checkbox" name="skills" id="java"> <label for="java">Java</label>
+        <input type="checkbox" name="skills" id="javascript"> <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="skills" id="c"> <label for="c">C</label>
+        <br> <br>
+
+        <label for="section">Section: </label>
+        <select name="section" id="section">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select> <br> <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

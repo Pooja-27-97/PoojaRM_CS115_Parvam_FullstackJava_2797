@@ -1,0 +1,24 @@
+h2 {
+    background-color: aqua;
+    color: purple;
+    font-size: 20px;
+    font-weight: 900;
+}
+.box{
+    text-align: center;
+    text-decoration: greenyellow underline wavy;
+    border: 5px solid yellow;
+    background-color: hotpink;
+}
+#para {
+    background-color: antiquewhite;
+    color: hotpink;
+    letter-spacing: 10px;
+}
+h2+p {
+    background-color: chartreuse;
+    line-height: 50px;
+}
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

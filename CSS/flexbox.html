@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using FlexBox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /*vw - view port width  */
+            width: 100vw;
+            /*vh - view port height  */
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            /* justify-content: start; */
+            /* justify-content: end; */
+            justify-content: space-between;
+            /* justify-content: start; */
+            height: 60px;
+            align-items: end;
+            /* flex-direction: column; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Blog</a>
+        <a href="">Contact US</a>
+    </div>
+</body>
+</html>
