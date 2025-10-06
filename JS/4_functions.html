@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <h1>3 ways</h1>
+    <pre>
+        1. Function Declaration
+        2. Function Expression
+        3. Arrow Function
+    </pre>
+
+    <script>
+        //1. function Declaration
+        console.log("------function Declaration------");
+        function add(a, b) {
+            console.log("The sum is: ", a + b);
+        }
+        add(10, 20);
+        function add1(a, b) {
+            return a + b;
+        }
+        console.log("The sum is: ", add1(30, 50));
+
+        function add2() {
+            return "Addition";
+        }
+        console.log(add2());
+
+        function add3() {
+            console.log("Addition without parameters");
+        }
+        add3();
+
+
+        //2. Function Expression
+        console.log("------Function Expression------");
+        const mul = function (a, b) {
+            return a * b;
+        }
+        let res = mul(20, 30);
+        console.log("The multiplication is: ", res);
+
+        const mul1 = function (a, b) {
+            console.log(a * b);
+        }
+        mul1(5, 8);
+
+        const mul2 = function () {
+            console.log("Multiplication without parameters");
+        }
+        mul2();
+
+        const mul3 = function () {
+            return "Multiplication";
+        }
+        console.log(mul3())
+
+
+        //3. Arrow Function
+        console.log("------Arrow Function------");
+        const div = (a, b) => {
+            console.log("div is: ", a / b);
+        }
+        div(20, 2);
+
+        const div1 = (a, b) => {
+            return a / b;
+        }
+        console.log(div1(20, 12));
+
+        const div2 = () => {
+            console.log("Division");
+        }
+        div2();
+
+        const div3 = () => {
+            return "Division without parameters";
+        }
+        console.log(div3(20, 2));
+
+        console.log(window);
+    </script>
+</body>
+
+</html>

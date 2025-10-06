@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What we can do</title>
+</head>
+
+<body>
+    <h3>1. we can chage HTML content</h3>
+    <p id="demo">This is existing content</p>
+    <button id="btn1">Click Me</button>
+
+    <h3>2. we can change the Attr HTMl</h3>
+    <img src="./off.jpg" alt="image" width="100px" height="100px" id="bulb_img">
+
+    <button type="button" onclick="document.getElementById('bulb_img').src='./on.jpg'">Turn ON</button>
+    <button type="button" onclick="document.getElementById('bulb_img').src='./off.jpg'">Turn OFF</button>
+
+    <h3>3. we can change the CSS Sytle</h3>
+    <p id="demo2">lorem</p>
+    <button type="button" onclick="document.getElementById('demo2').style.color='red'">Click Me</button>
+
+    <h3>4. we can hide the html code</h3>
+    <p id="demo3">Lorem, ipsum.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me</button>
+
+    <h3>4. we can Show the html code</h3>
+    <p id="demo4" style="display: none;">Lorem, ipsum.</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me</button>
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", () => {
+            document.getElementById("demo").innerHTML = "This is new content";
+        });
+    </script>
+</body>
+
+</html>

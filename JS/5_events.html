@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+
+<body>
+    <h1>Events in JS</h1>
+    <pre id="demo">
+        1. mouse - onclick, onmouseover
+        2. form - onsubmit,oninput
+        3. window - onresize, onscroll
+    </pre>
+    <button id="myBtn">Click Me</button>
+    <p id="demo2"></p>
+    <form id="std_form">
+        Name: <input type="text" name="name" id="name">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        document.getElementById("myBtn").addEventListener("click", () => {
+            document.getElementById("demo").innerText = "Hello World";
+            console.log("Button is clicked");
+            alert("Button is clicked");
+        });
+
+        // document.getElementById("name").addEventListener("input", () => {
+        //     document.getElementById("demo2").innerText = document.getElementById("name").value;
+        // })
+        document.getElementById("name").addEventListener("blur", () => {
+            document.getElementById("demo2").innerText = document.getElementById("name").value;
+        })
+
+        document.getElementById("std_form").addEventListener("submit", () => {
+            event.preventDefault();
+            console.log("Form is submitted");
+        })
+
+    </script>
+</body>
+
+</html>
